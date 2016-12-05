@@ -33,7 +33,6 @@
 
             .title {
                 font-family: 'Dosis';
-                font-weight: bold;
                 font-size: 24px;
                 text-align: center;
                 margin: auto;
@@ -101,7 +100,6 @@
                 width: 1000px;
                 margin-left: 9%;
                 font-family: 'Lato', sans-serif;
-                font-weight: 300;
                 line-height: 20px;
             }
             h1{
