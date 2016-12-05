@@ -1,13 +1,9 @@
-            @font-face
-            {
-                font-family: Dosis;
-                src: /Dosis/Dosis-Medium.ttf ;
-            }
+
             #chart {
               background: #fff;
 /*                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 /*                font-family: 'Open Sans Condensed', sans-serif;*/
-                font-family: "Dosis";
+                font-family: 'Dosis';
                 width: 90%;
                 margin-left: auto;
                 margin-right: auto;
@@ -31,12 +27,12 @@
             }
 
             .ctext{
-                font-family: "Dosis";
+                font-family: 'Dosis';
                 font-size: "small";
             }
 
             .title {
-                font-family: "Dosis";
+                font-family: 'Dosis';
                 font-weight: bold;
                 font-size: 24px;
                 text-align: center;
