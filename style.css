@@ -11,7 +11,9 @@
 
             #dropdown{
                 display: flex;
-                justify-content: center;
+                justify-content: left;
+                width: 90%;
+                margin: auto;
 /*
                 margin: auto;
                 margin-left: 27%;
@@ -34,9 +36,9 @@
             .title {
                 font-family: 'Dosis';
                 font-size: 24px;
-                text-align: center;
-                margin: auto;
+                text-align: left;
                 margin-top: 10px;
+                margin-left: 0px;
                 
             }
             text {
@@ -97,15 +99,17 @@
 
             
             p,h1{
-                width: 1000px;
-                margin-left: 9%;
+                width: 90%;
+                margin: auto;
                 font-family: 'Lato', sans-serif;
                 line-height: 20px;
-                font-weight: lighter;
+                font-weight: 300;
             }
             h1{
                 font-size: 25px;
                 text-align: center;
+                margin-bottom: 13px;
+                margin-top: 20px;
             }
             .footer{
                 font-size: 12px;
@@ -115,5 +119,5 @@
                 margin-top: 0px;
                 margin-bottom: 0px;
                 font-size: 10px;
-                margin-left: auto;
+                margin-right: 0px;
             }
