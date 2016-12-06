@@ -264,13 +264,13 @@
 
                 t.call(text);
 
-                svg.append("rect")
-                   .attr('x', 0)
-                   .attr('y', 0)
-                   .attr('id', 'hover-effect')
-                   .attr('width', 0)
-                   .attr('height', 0)
-                   ;
+//                 svg.append("rect")
+//                    .attr('x', 0)
+//                    .attr('y', 0)
+//                    .attr('id', 'hover-effect')
+//                    .attr('width', 0)
+//                    .attr('height', 0)
+//                    ;
 
                 g.selectAll("rect")
                     .style("fill", function(d) {
@@ -343,34 +343,34 @@
                                 return color((d.MDM/d.Count));
                         }
                     })
-                    .on("mouseover", function(){
-                        for(var i = 0; i< $(".children").length ; i++){
-                          for( var j = 0; j < $($(".children")[i]).children().length ; j++){
-                              for( var k = 0; k < $($($(".children")[i]).children()[j]).children().length ; k++){
-                                  if($($($(".children")[i]).children()[j]).children()[k].getAttribute('id') == this.getAttribute('id')){
-                                    svg.select("#hover-effect")
-//                                       .transition()
-//                                       .duration(200)
-                                       .attr('x', d3.select(($(".children")[i])).selectAll(".parent")[0][0].getAttribute('x'))
-                                       .attr('y', d3.select(($(".children")[i])).selectAll(".parent")[0][0].getAttribute('y'))
-                                       .attr('width', d3.select(($(".children")[i])).selectAll(".parent")[0][0].getAttribute('width'))
-                                       .attr('height', d3.select(($(".children")[i])).selectAll(".parent")[0][0].getAttribute('height'))
-                                       ;
-                                  }
-                              }
-                          }
-                        }
-                    })
-                    ;
+//                     .on("mouseover", function(){
+//                         for(var i = 0; i< $(".children").length ; i++){
+//                           for( var j = 0; j < $($(".children")[i]).children().length ; j++){
+//                               for( var k = 0; k < $($($(".children")[i]).children()[j]).children().length ; k++){
+//                                   if($($($(".children")[i]).children()[j]).children()[k].getAttribute('id') == this.getAttribute('id')){
+//                                     svg.select("#hover-effect")
+// //                                       .transition()
+// //                                       .duration(200)
+//                                        .attr('x', d3.select(($(".children")[i])).selectAll(".parent")[0][0].getAttribute('x'))
+//                                        .attr('y', d3.select(($(".children")[i])).selectAll(".parent")[0][0].getAttribute('y'))
+//                                        .attr('width', d3.select(($(".children")[i])).selectAll(".parent")[0][0].getAttribute('width'))
+//                                        .attr('height', d3.select(($(".children")[i])).selectAll(".parent")[0][0].getAttribute('height'))
+//                                        ;
+//                                   }
+//                               }
+//                           }
+//                         }
+//                     })
+//                     ;
 
 
                 function transition(d) {
-                  svg.select("#hover-effect")
-//                     .transition()
-//                     .duration(50)
-                     .attr('width', 0)
-                     .attr('height', 0)
-                     ;
+//                   svg.select("#hover-effect")
+// //                     .transition()
+// //                     .duration(50)
+//                      .attr('width', 0)
+//                      .attr('height', 0)
+//                      ;
                   if (transitioning || !d) return;
                   transitioning = true;
 
