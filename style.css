@@ -82,12 +82,11 @@
             }
 
             .children:hover rect.child {
-                opacity: 1;
+                opacity: 0.9;
             }
 
             .children:hover rect{
               /*  fill: #ee9700 !important;  */
-                opacity: 1;
 
             }
             #hover-effect{
